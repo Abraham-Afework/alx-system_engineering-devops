@@ -1,0 +1,2 @@
+#!/bin/bash
+file -bcCdEhikLlNnprsSvzZ0  /tmp/iamafile

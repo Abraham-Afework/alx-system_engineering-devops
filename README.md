@@ -1,1 +1,1 @@
-the alx shell scripting
+this repository is containign script files that are manipulated in shell
