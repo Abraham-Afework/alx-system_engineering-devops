@@ -3,6 +3,7 @@
 while true
 do	echo "To infinity and beyond" 
 	trap "echo 'I am invincible!!!'" SIGTERM
+	trap exit SIGKILL
 	sleep 2
 
 done
