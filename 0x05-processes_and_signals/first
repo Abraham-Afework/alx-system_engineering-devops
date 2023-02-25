@@ -1,0 +1,20 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   2364  1632 ?        Sl   Feb20   1:42 /init
+abrilo    1519  0.0  0.2  23352  9472 pts/0    T    Feb22   0:00 vi
+abrilo    6909  0.0  0.1   8960  3980 pts/0    T    Feb23   0:00 man ssh-keygen
+abrilo    6919  0.0  0.0   7592  2152 pts/0    T    Feb23   0:00 pager
+root      7605  0.0  0.0   2364   524 ?        Ss   Feb23   0:00 /init
+root      7606  0.0  0.0   2364   524 ?        S    Feb23   0:01 /init
+abrilo    7607  0.0  0.1  11208  6340 pts/1    Ss+  Feb23   0:01 -bash
+root      7734  0.0  0.0   2540   596 ?        Ss   Feb23   0:00 /init
+root      7735  0.0  0.0   2540   596 ?        S    Feb23   0:01 /init
+abrilo    7736  0.0  0.1  10296  5372 pts/2    Ss+  Feb23   0:00 -bash
+root      9264  0.0  0.0   2364   524 ?        Ss   Feb24   0:00 /init
+root      9265  0.0  0.0   2364   524 ?        S    Feb24   0:03 /init
+abrilo    9266  0.0  0.1  11980  7196 pts/3    Ss   Feb24   0:02 -bash
+abrilo   10560  0.0  0.1   8960  3888 pts/3    T    08:08   0:00 man id
+abrilo   10572  0.0  0.0   7592  2184 pts/3    T    08:08   0:00 pager
+abrilo   10750  0.0  0.0  10856  3464 pts/3    R+   08:27   0:00 ps -aux 1
+root     31170  0.0  0.0   2256   500 ?        Ss   Feb22   0:00 /init
+root     31171  0.0  0.0   2256   500 ?        S    Feb22   0:19 /init
+abrilo   31172  0.0  0.1  11560  6664 pts/0    Ss+  Feb22   0:13 -bash
