@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# Returns the user process ID (PID)	
 id -u
