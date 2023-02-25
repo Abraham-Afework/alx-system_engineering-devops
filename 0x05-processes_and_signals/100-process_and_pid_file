@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+#a Bash script that displays To infinity and beyond indefinitely.
+
+id=$(pgrep -f ./100-process_and_pid_file)
+sudo touch /var/run/myscript.pid
+sudo chmod 777 /var/run/myscript.pid
+sudo  "$id" tee file /var/run/myscript.pid
+
+function terminate {
+echo "I hate the kill command"
+sudo rm /var/run/myscript.pid
+exit 0
+}
+
+function killer {
+echo 'Y u no love me?!'
+exit 130
+}
+
+while true
+do	echo "To infinity and beyond" 
+	trap terminate SIGTERM
+	trap killer SIGINT
+	sleep 2
+
+done
