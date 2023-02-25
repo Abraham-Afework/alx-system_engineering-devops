@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+#a Bash script that displays To infinity and beyond indefinitely.
+FILE=$"/var/run/my_process.pid"
+
+
+function start_process 
+{	
+	./manage_my_process &
+	
+}
+
+function restart_process 
+{	
+	id="$(cat $FILE)"
+	sudo kill "$id"	
+	start_process
+	echo "manage_my_process restarted"
+}
+
+function stop_process 
+{	
+	id="$(cat $FILE)"
+	sudo kill "$id"	
+	sudo rm -f $FILE
+	echo "manage_my_process stopped"
+}
+args=$#
+if [ "$args" != 1 ]
+then 
+	echo "Usage: manage_my_process {start|stop|restart}"
+
+elif [ "$1" == "start" ]
+then
+	start_process
+   	echo "manage_my_process started"
+	
+elif [ "$1" == "restart" ]
+then
+	restart_process
+	
+elif [ "$1" == "stop" ]
+then
+	stop_process
+else
+	echo "Usage: manage_my_process {start|stop|restart}"
+fi
+

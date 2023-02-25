@@ -4,7 +4,7 @@
 id=$(pgrep -f ./100-process_and_pid_file)
 sudo touch /var/run/myscript.pid
 sudo chmod 777 /var/run/myscript.pid
-sudo  "$id" tee file /var/run/myscript.pid
+sudo  echo "$id" > /var/run/myscript.pid
 
 function terminate {
 echo "I hate the kill command"

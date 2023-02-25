@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#a Bash script that displays To infinity and beyond indefinitely.
+id=$(pgrep -f ./manage_my_process)
+sudo touch /var/run/my_process.pid 
+sudo chmod 777 /var/run/my_process.pid
+echo "$id" > /var/run/my_process.pid
+text="I am alive!"
+while true
+do
+
+	 echo "$text" >> /tmp/my_process 
+	sleep 2
+done 
