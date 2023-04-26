@@ -1,0 +1,2 @@
+#starts apache server
+service start apache2
